@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example Website Design</title>
+  <style>
+    /* Global reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Navigation Bar */
+    nav {
+      background: #333;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 15px;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    /* Header Section with Background Image */
+    header {
+      background: url('background.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    /* Main Content Sections */
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 10px;
+    }
+    section p {
+      margin-bottom: 15px;
+    }
+    /* Video Section */
+    .video-section {
+      text-align: center;
+    }
+    video {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border: 2px solid #ddd;
+    }
+    /* Button Styles */
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      background: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    button:hover {
+      background: #575757;
+    }
+    /* Form Styles */
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .contact-form button {
+      margin-top: 10px;
+    }
+    /* Footer Styles */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header Section with Background Image -->
+  <header id="home">
+    <div>
+      <h1>Welcome to Our Website</h1>
+      <p>Your captivating tagline goes here.</p>
+    </div>
+  </header>
+
+  <!-- About Section with Text and a Button -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are dedicated to creating engaging online experiences. Our team focuses on high-quality design and functionality to provide our users with the best service possible.</p>
+    <button onclick="alert('Learn more clicked!')">Learn More</button>
+  </section>
+
+  <!-- Video Section -->
+  <section id="video" class="video-section">
+    <h2>Our Latest Video</h2>
+    <video controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>Watch our latest project showcase and learn more about our creative process.</p>
+  </section>
+
+  <!-- Contact Section with Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name...">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email...">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
